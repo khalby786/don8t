@@ -1,0 +1,142 @@
+/* don8t.css */
+/* Khaleel Gibran <khalby786@gmail.com> */
+/* MIT License - 2021 */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;800&display=swap");
+
+:root {
+  --foreground: #000;
+  --background: #fff;
+  --font-family-sans: "Inter", "Helvetica", "Arial", sans-serif;
+  --font-family-mono: "Fira Code", "IBM Plex Mono", "Consolas", monospace;
+  --border: lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-sans);
+  max-width: 600px;
+  margin: 0 auto;
+  letter-spacing: -0.03em;
+  font-variation-settings: "wght" 400, "ss03";
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 1em;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+pre,
+code {
+  white-space: normal;
+}
+
+code {
+  font-family: var(--font-family-mono);
+  color: gray;
+}
+
+code:before {
+  content: "`";
+}
+
+code:after {
+  content: "`";
+}
+
+pre > code {
+  white-space: normal;
+  background-color: var(--border);
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-family: var(--font-family-mono);
+  color: var(--foreground);
+  width: 100%;
+  line-height: 1.7;
+}
+
+pre > code:before {
+  content: "";
+}
+
+pre > code:after {
+  content: "";
+}
+
+a {
+  color: #5500ff;
+  transition: 200ms;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ba30ff;
+  transition: 200ms;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-sans);
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.006),
+    0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
+    0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
+    0px 0px 80px rgba(0, 0, 0, 0.02);
+  color: white;
+  background-color: #5500ff;
+  font-size: 16px;
+  transition: 200ms;
+}
+
+button:hover {
+  background-color: #ba30ff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(1) th {
+  border-bottom: 1px solid gray;
+}
+
+td,
+th {
+  padding: 4px 0px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+  text-align: left;
+}
+
